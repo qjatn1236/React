@@ -48,6 +48,7 @@ export default function Users() {
 						{scdepth.map((scuser) => (
 							<li key={scuser.idx}>{scuser.category}</li>
 						))}
+						{thdepth}
 					</ul>
 				</li>
 			))}
