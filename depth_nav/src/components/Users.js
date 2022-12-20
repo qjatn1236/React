@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export default function Users() {
-	const [users, setUsers] = useState(null);
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
+	const [users, setUsers] = useState(null);
 	const [scdepth, setScdepth] = useState(null);
+	const [thdepth, setThdepth] = useState(null);
 
 	useEffect(() => {
 		const fetchUsers = async () => {
@@ -19,11 +20,12 @@ export default function Users() {
 					'http://tms.pitap.at/api/category/category_list.php',
 				);
 				setUsers(response.data.one_depth); // 데이터는 response.data 안에 들어있습니다
-				setScdepth(response.data.second_depth.map((data) => data[0].category));
-				// console.log(response.data);
-				// console.log(res.seconde.data.one_depth);
+				setScdepth(response.data.second_depth.map((data) => data));
+				setThdepth(response.data.three_depth.map((data) => data));
+
 				console.log(response.data.second_depth);
-				console.log(response.data.second_depth.map((data) => data[0].category));
+				console.log(response.data.second_depth.map((data) => data));
+				console.log(response.data.three_depth.map((data) => data));
 			} catch (e) {
 				setError(e);
 			}
