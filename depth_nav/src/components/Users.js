@@ -18,7 +18,7 @@ export default function Users() {
 				const response = await axios.get(
 					'http://tms.pitap.at/api/category/category_list.php',
 				);
-				setUsers(response.data.one_depth); // 데이터는 response.data 안에 들어있습니다.
+				setUsers(response.data.one_depth); // 데이터는 response.data 안에 들어있습니다
 				setScdepth(response.data.second_depth.map((data) => data[0].category));
 				// console.log(response.data);
 				// console.log(res.seconde.data.one_depth);
