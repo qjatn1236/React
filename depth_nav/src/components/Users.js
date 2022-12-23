@@ -23,7 +23,7 @@ export default function Users() {
 				setScdepth(response.data.second_depth.map((data) => data));
 				setThdepth(response.data.three_depth.map((data) => data));
 
-				console.log(response.data.second_depth);
+				console.log(response.data.one_depth);
 				console.log(response.data.second_depth.map((data) => data));
 				console.log(response.data.three_depth.map((data) => data));
 			} catch (e) {
@@ -41,14 +41,16 @@ export default function Users() {
 
 	return (
 		<ul>
-			{users.map((user) => (
+			{users.map((user, index) => (
 				<li key={user.idx}>
 					{user.category}
 					<ul>
-						{scdepth.map((scuser) => (
-							<li key={scuser.idx}>{scuser.category}</li>
+						{scdepth[0].map((scuser) => (
+							<li key={scuser.idx}>{scuser.category} </li>
 						))}
-						{thdepth}
+						{thdepth.map((thuser) => (
+							<li key={thuser.idx}>{thuser.category}</li>
+						))}
 					</ul>
 				</li>
 			))}
