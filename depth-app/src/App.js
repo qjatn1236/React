@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
 import Tab from './components/Tab';
-
+import TabAll from './components/TabAll';
+import { BrowserRouter as Routes, Route } from 'react-router-dom';
 import { TAB_LIST } from './mock';
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
 						/>
 					))}
 				</div>
+				<Routes>
+					<Route path='components/*' element={<TabAll />} />
+				</Routes>
 			</header>
 		</div>
 	);

@@ -17,8 +17,8 @@ function Tab({ title, children, img }) {
 						<Tab
 							key={child.title}
 							title={child.title}
-							children={child.children}
-							img={child.img}
+							// children={child.children}
+							// img={child.img}
 						/>
 						{/* {img && <img src={img} />} */}
 					</div>
@@ -26,4 +26,5 @@ function Tab({ title, children, img }) {
 		</div>
 	);
 }
+
 export default Tab;
