@@ -1,0 +1,34 @@
+import { useEffect, useRef, useState } from 'react';
+import {
+	useLocation
+} from 'react-router-dom';
+
+const useSticky = () => {
+	const location = useLocation();
+	const stickyRef = useRef(null);
+	const [sticky, setSticky] = useState(false);
+	const [stickyOffset, setStickyOffset] = useState(0);
+
+	useEffect(() => {
+		if (!stickyRef.current) {
+			return;
+		}
+		setStickyOffset(stickyRef.current.offsetTop);
+	}, [stickyRef, setStickyOffset, location]);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (!stickyRef.current) {
+				return;
+			}
+
+			const shouldBeSticky = window.scrollY > stickyOffset;
+			setSticky(shouldBeSticky);
+		};
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [setSticky, stickyRef, stickyOffset]);
+	return { stickyRef, sticky };
+};
+
+export default useSticky;

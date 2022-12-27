@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* 사용하는 폰트로 변경 해줘야함 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face{
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Thin.otf');
+    src: url('../fonts/Pretendard-Thin.otf') format('opentype'),
+    url('../fonts/Pretendard-Thin.ttf') format('truetype'),
+    url('../fonts/Pretendard-Thin.woff') format('woff'),
+    url('../fonts/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-ExtraLight.otf');
+    src: url('../fonts/Pretendard-ExtraLight.otf') format('opentype'),
+    url('../fonts/Pretendard-ExtraLight.ttf') format('truetype'),
+    url('../fonts/Pretendard-ExtraLight.woff') format('woff'),
+    url('../fonts/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Light.otf');
+    src: url('../fonts/Pretendard-Light.otf') format('opentype'),
+    url('../fonts/Pretendard-Light.ttf') format('truetype'),
+    url('../fonts/Pretendard-Light.woff') format('woff'),
+    url('../fonts/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Regular.otf');
+    src: url('../fonts/Pretendard-Regular.otf') format('opentype'),
+    url('../fonts/Pretendard-Regular.ttf') format('truetype'),
+    url('../fonts/Pretendard-Regular.woff') format('woff'),
+    url('../fonts/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Medium.otf');
+    src: url('../fonts/Pretendard-Medium.otf') format('opentype'),
+    url('../fonts/Pretendard-Medium.ttf') format('truetype'),
+    url('../fonts/Pretendard-Medium.woff') format('woff'),
+    url('../fonts/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-SemiBold.otf');
+    src: url('../fonts/Pretendard-SemiBold.otf') format('opentype'),
+    url('../fonts/Pretendard-SemiBold.ttf') format('truetype'),
+    url('../fonts/Pretendard-SemiBold.woff') format('woff'),
+    url('../fonts/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Bold.otf');
+    src: url('../fonts/Pretendard-Bold.otf') format('opentype'),
+    url('../fonts/Pretendard-Bold.ttf') format('truetype'),
+    url('../fonts/Pretendard-Bold.woff') format('woff'),
+    url('../fonts/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-ExtraBold.otf');
+    src: url('../fonts/Pretendard-ExtraBold.otf') format('opentype'),
+    url('../fonts/Pretendard-ExtraBold.ttf') format('truetype'),
+    url('../fonts/Pretendard-ExtraBold.woff') format('woff'),
+    url('../fonts/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Black.otf');
+    src: url('../fonts/Pretendard-Black.otf') format('opentype'),
+    url('../fonts/Pretendard-Black.ttf') format('truetype'),
+    url('../fonts/Pretendard-Black.woff') format('woff'),
+    url('../fonts/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+}
+
+/*
+    Nunito Sans
+    Thin 100 Extra-light 200 Light 300 Regular 400 Medium 500 Semi-bold 600 Bold 700 Extra-bold 800 Black 900
+
+    Pretendard
+    Thin 100 Extra-light 200 Light 300 Regular 400 Medium 500 Semi-bold 600 Bold 700 Extra-bold 800 Black 900
+*/
+
+/* common */
+.ir_text{overflow: hidden;position: absolute;width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;clip: rect(0 0 0 0);}
+.clearfix:after{content: '';display: block;clear: both;height: 0;visibility: visible;}
+.scrollDisable{height: 100%;min-height: 100%;overflow: hidden !important;touch-action: none;}
+
+.fw_900{font-weight: 900;}
+.fw_800{font-weight: 800;}
+.fw_700{font-weight: 700;}
+.fw_600{font-weight: 600;}
+.fw_500{font-weight: 500;}
+.fw_400{font-weight: 400;}
+.fw_300{font-weight: 300;}
+.fw_200{font-weight: 200;}
+.fw_100{font-weight: 100;}
+
+.fm_NotoSans{font-family: 'Noto Sans KR', sans-serif;}
+.fm_Pretendard{font-family: 'Pretendard', sans-serif;}
+

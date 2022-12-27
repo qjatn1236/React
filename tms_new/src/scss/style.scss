@@ -1,0 +1,191 @@
+/* commone */
+$font-family: "Noto Sans KR", sans-serif;
+
+/* color */
+$primary-color: #333;
+$color-ffffff: #ffffff;
+$color-f00000: #f00000;
+
+/* background-color */
+$header-bg-color: #00948f;
+
+* {
+  color: $primary-color;
+  font-family: $font-family;
+}
+
+.btnBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.logo {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.backBtn{
+  font-size: 16px;
+}
+
+/* header */
+header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  background-color: $header-bg-color;
+  z-index: 1000;
+  .headerWrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1240px;
+    min-width: 1240px;
+    margin: 0 auto;
+    // padding-bottom: 50px;
+    a {
+      color: $color-ffffff;
+      &:hover{
+        color: $color-f00000;
+      }
+    }
+    .active{
+      color: $color-f00000;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      width: calc(100% - 100px);
+      > li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+        > a {
+          display: block;
+          height: auto;
+          padding: 10px 0;
+          font-size: 18px;
+        }
+        > ul {
+          padding: 20px 0;
+          li {
+            text-align: center;
+            a {
+              display: block;
+              margin-bottom: 10px;
+              &:hover{
+                color: $color-f00000;
+              }
+            }
+          }
+          li:last-child {
+            a {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .moreView{
+      position: absolute;
+      bottom: 25px;
+      right: 0;
+      color: $color-ffffff;
+      font-size: 15px;
+      &:hover{
+        color: $color-f00000;
+      }
+    }
+  }
+}
+
+header.main{
+  top: 100vh;
+}
+header.sub{
+  top: 150px;
+}
+header.sticky{
+  position: fixed;
+  top: 0;
+}
+
+.siteMap{width: 100%;}
+.siteMap .cont_wrap{
+  width: 100%;
+  min-width: 1240px;
+  max-width: 1240px;margin: 0 auto;padding: 0 20px;}
+.siteMap .cont_wrap > ul{display: flex;justify-content: space-between;}
+.siteMap .cont_wrap > ul > li > a{font-size: 22px;font-weight: bold;}
+.siteMap .cont_wrap > ul > li > ul{margin-top: 30px;margin-left: 10px;}
+.siteMap .cont_wrap > ul > li > ul > li{margin-bottom: 20px;}
+.siteMap .cont_wrap > ul > li > ul > li > a{font-size: 18px;font-weight: 500;}
+.siteMap .cont_wrap > ul > li > ul > li > ul{margin-top: 10px;margin-left: 5px;}
+.siteMap .cont_wrap > ul > li > ul > li > ul > li{margin-bottom: 5px;}
+.siteMap .cont_wrap > ul > li > ul > li > ul > li > a{font-size: 16px;}
+
+.contents{
+  position: relative;
+  width: 100%;
+  min-width: 1240px;
+  min-height: calc(100vh - 100px);
+  // padding-top: 100px;
+}
+
+#lnb{
+  position: absolute;
+  top: 90px;
+  left: 350px;
+  width: 100%;
+  > ul{
+    display: flex;
+    align-items: center;
+    li{
+      position: relative;
+      padding-right: 40px;
+    }
+    :last-child{
+      padding-right: 0;
+    }
+    ::after{
+      content: '>';
+      position: absolute;
+      top: 0;
+      right: 20px;
+    }
+    :last-child:after{
+      content: none;
+    }
+  }
+}
+
+#snb{
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 300px;
+  height: auto;
+  border: 1px solid red;
+}
+
+// // #snb .sub_left {float: left; width: 185px;}
+// #snb .sub_left h3 {margin-bottom: 10px; padding: 0 10px;}
+// #snb .sub_left > ul {border-top: 3px solid #000; }
+// #snb .sub_left > ul > li {border-bottom: 2px solid #ccc; cursor: pointer;}
+// #snb .sub_left > ul > li > a { display: block; background: url(../assets/images/arrow_bottom.png) no-repeat 95% 50%; padding: 10px 20px;}
+// #snb .sub_left > ul > li:last-child {border-bottom: 1px solid #ccc;}
+// #snb .sub_left > ul > li.on > a { background: url(../assets/images/arrow_top.png) no-repeat 95% 50%;}
+// #snb .sub_left > ul > li.on .s_page{border-top: 2px solid #ccc;}
+// #snb .sub_left .s_page {display: none; background: #faf9f9;}
+// #snb .sub_left .s_page li {padding: 7px 20px;}
+// #snb .sub_left .s_page li > a {font-size: 14px;}
+// #snb .sub_left .s_page li.block > a {font-weight: 600;}
+
