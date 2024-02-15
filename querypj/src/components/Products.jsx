@@ -15,7 +15,23 @@ export default function Products() {
       const response = await fetch(`data/${checked ? "sale_" : ""}products.json`);
       return response.json();
     },
+    staleTime: 1000 * 60 * 5,
   });
+
+  // const {
+  //   isLoading,
+  //   error,
+  //   data: products,
+  // } = useQuery({
+  //   queryKey: ["products", checked],
+  //   queryFn: async () => {
+  //     console.log("fetching...");
+  //     return fetch(`data/${checked ? "sale_" : ""}products.json`).then((res) =>
+  //       res.json()
+  //     );
+  //   },
+  //   staleTime: 5000,
+  // });
 
   const handleChange = () => setChecked((prev) => !prev);
 
