@@ -3,7 +3,15 @@ import { useQuery } from "@tanstack/react-query";
 
 export default function Products() {
   const [checked, setChecked] = useState(false);
+  
+  // AIzaSyAjiQColwsL52Vckf7l0jbS7ZHpxTewddA
+  // https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=surfing&key=[YOUR_API_KEY]
 
+  // https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=surfing&key=AIzaSyAjiQColwsL52Vckf7l0jbS7ZHpxTewddA
+  // https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyAjiQColwsL52Vckf7l0jbS7ZHpxTewddA
+  // https://youtube.googleapis.com/youtube/v3/search?part=snippet&relatedToVideoId=Ks-_Mh1QhMc&type=video&maxResults=25&key=AIzaSyAjiQColwsL52Vckf7l0jbS7ZHpxTewddA
+  // https://academy.dream-coding.com/courses/player/react/lessons/1507/discussions/8980=AIzaSyAjiQColwsL52Vckf7l0jbS7ZHpxTewddA
+  // https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=UC_x5XG1OV2P6uZZ5FSM9Ttw&key=AIzaSyAjiQColwsL52Vckf7l0jbS7ZHpxTewddA
   const {
     isLoading,
     error,
