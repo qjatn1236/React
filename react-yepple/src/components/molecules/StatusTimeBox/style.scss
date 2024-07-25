@@ -1,0 +1,41 @@
+@import '/src/mixin.scss';
+
+.statusTimeBox {
+  display: flex;
+  flex-direction: column;
+  .timeItem {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @include px-vw(gap, 10);
+    @include px-vw(height, 116);
+    &:last-child {
+      @include px-vw(height, 14);
+    }
+    p {
+      @include px-vw(width, 15);
+      @include px-vw(height, 14);
+      @include px-vw(font-size, 12);
+      @include px-vw(margin-top, -6);
+      color: #ccc;
+    }  
+    .lineArea {
+      display: flex;
+      flex-direction: column;
+      @include px-vw(gap, 56);
+      @include px-vw(width, 342);
+      @include px-vw(min-height, 58);
+    }
+    .line{
+      width: 100%;
+      @include px-vw(height, 1);
+      &:nth-child(2n+1) {
+        background: #ccc;
+      }
+      &:nth-child(2n) {
+        background: url('/src/assets/images/line_gray.svg');
+        background-size: 100% 100%;
+      }
+    }
+  }
+}

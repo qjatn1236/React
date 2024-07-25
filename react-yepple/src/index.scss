@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 100;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 200;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 800;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+html {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-text-size-adjust: none;
+  -webkit-appearance: none;
+}
+html {
+  overflow-x: hidden;
+  -webkit-touch-callout: none;
+} /* -webkit-user-select:none; 모바일 드래그 막기 */
+body {
+  min-width: 320px;
+  max-width: 100%;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #000000;
+} /* 맞는 폰트로 변경 해줘야함 */
+html,
+body {
+  height: 100%;
+}
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+input,
+button,
+textarea,
+fieldset,
+legend,
+td,
+th {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+table,
+th,
+td {
+  border-collapse: collapse; /*border-spacing: 0;*/
+}
+input,
+textarea,
+button,
+select {
+  font-family: "Noto Sans KR", "Pretendard", "FSSiena", sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+// input{-webkit-appearance: none;-webkit-border-radius: 0;border-radius: 0;}
+input:focus {
+  border-bottom: 1px solid #23c3e6 !important;
+  outline: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  outline: none;
+}
+input[type="text"]::-ms-clear,
+input[type="tel"]::-ms-clear {
+  display: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select::-ms-expand {
+  display: none;
+} /* IE 10, 11의 네이티브 화살표 숨기기 */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+button {
+  overflow: visible\9;
+} /* button fix for ie8 */
+label {
+  cursor: pointer;
+}
+label img {
+  pointer-events: none;
+}
+input::-webkit-input-placeholder {
+  color: #999;
+}
+input::-moz-placeholder {
+  color: #999;
+}
+input:-moz-placeholder {
+  color: #999;
+}
+input:-ms-input-placeholder {
+  color: #999;
+}
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+textarea::-moz-placeholder {
+  color: #999;
+}
+textarea:-moz-placeholder {
+  color: #999;
+}
+textarea:-ms-input-placeholder {
+  color: #999;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+input:focus::-moz-placeholder {
+  color: transparent !important;
+}
+input:focus:-moz-placeholder {
+  color: transparent !important;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+textarea:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+textarea:focus::-moz-placeholder {
+  color: transparent !important;
+}
+textarea:focus:-moz-placeholder {
+  color: transparent !important;
+}
+textarea:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+}
+
+.logoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7.8px;
+  .Logo {
+    width: 139px;
+    height: 52px;
+  }
+
+  .logoSubText {
+    color: #23c3e6;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: -0.035em;
+  }
+}
+
+.warningText {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  color: #ccc;
+  text-align: left;
+  letter-spacing: -0.42px;
+
+  &.warningTextred {
+    color: #f67d8b;
+  }
+}
+
+#root {
+  button {
+    &.whiteButton {
+      margin: 0 auto;
+      border: 1px solid #fff;
+      width: 264px;
+      height: 58px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #fff;
+      letter-spacing: -0.035em;
+      border-radius: 27px;
+      border: 1px solid #23c3e6;
+      background: #fff;
+      color: #23c3e6;
+      margin-bottom: 14px;
+    }
+
+    &.blueButton {
+      margin: 0 auto;
+      width: 264px;
+      height: 58px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #fff;
+      letter-spacing: -0.035em;
+      border-radius: 27px;
+      background: #23c3e6;
+    }
+  }
+}
+
+// 파도
+.subWaveBg {
+  height: 63px;
+  background-image: url("@images/SmallWave.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 89px;
+}

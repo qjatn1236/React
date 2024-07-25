@@ -1,0 +1,19 @@
+@import '/src/mixin.scss';
+
+.reservationStatusTemplate {
+  position: relative;
+  @include px-vw(padding-top, 88);
+  .calendarDateBox {
+    position: fixed;
+    @include px-vw(top, 44);
+    left: 0;
+    z-index: 99;
+  }
+  .footerButtonBox {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+  }
+}

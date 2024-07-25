@@ -1,0 +1,28 @@
+@import '/src/mixin.scss';
+
+.myReservationTitleBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    @include px-vw(font-size, 16);
+    font-weight: 600;
+    color: #666;
+  }
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include px-vw(gap, 4);
+    button {
+      @include px-vw(padding-top, 5);
+      @include px-vw(padding-bottom, 5);
+      @include px-vw(padding-left, 10);
+      @include px-vw(padding-right, 10);
+      @include px-vw(border-radius, 4);
+      border: 1px solid #23C3E6;
+      @include px-vw(font-size, 12);
+      color: #23C3E6;
+    }
+  }
+}

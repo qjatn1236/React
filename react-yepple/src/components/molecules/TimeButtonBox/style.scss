@@ -1,0 +1,65 @@
+@import '/src/mixin.scss';
+
+.timeButtonBox {
+  display: block;
+  @include px-vw(padding-top, 6);
+  @include px-vw(padding-bottom, 6);
+  @include px-vw(padding-left, 17);
+  overflow-x: auto;
+}
+.textArea{
+  display: flex;
+  @include px-vw(gap, 35); 
+  @include px-vw(width, 565); 
+  p {
+    @include px-vw(width, 15); 
+    @include px-vw(font-size, 12); 
+    color: #CCCCCC;
+    letter-spacing: -0.42px;
+  }
+}
+.buttonArea {
+  display: flex;
+  @include px-vw(width, 565); 
+  @include px-vw(gap, 1); 
+  @include px-vw(padding-top, 5); 
+  @include px-vw(padding-left, 7); 
+  button {
+    position: relative;
+    @include px-vw(width, 24); 
+    @include px-vw(height, 24); 
+    background: #EEEEEE;
+    background-size: 100% 100%;
+    &.active {
+      background: #23C3E6;
+    }
+    &.none {
+      pointer-events: none;
+      background-image: url('/src/assets/images/time_select_reservation.svg');
+    }
+    &:first-child::before{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      @include px-vw(margin-top, -5); 
+      @include px-vw(width, 1); 
+      @include px-vw(height, 30); 
+      background: #CCCCCC;
+    }
+    &:nth-child(2n)::after{
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      @include px-vw(margin-right, -1); 
+      @include px-vw(margin-top, -6); 
+      @include px-vw(width, 1); 
+      @include px-vw(height, 30); 
+      background: #CCCCCC;
+    }
+  }
+}
+
+
+

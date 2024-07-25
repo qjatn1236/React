@@ -1,0 +1,12 @@
+@import '/src/mixin.scss';
+
+.peopleWrap {
+  @include px-vw(padding-top, 18);
+  @include px-vw(padding-bottom, 18);
+  @include px-vw(padding-left, 19);
+  @include px-vw(padding-right, 13);
+  background-color: #ffffff;
+  .peopleBox {
+    @include px-vw(margin-top, 18);
+  }
+}

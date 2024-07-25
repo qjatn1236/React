@@ -1,0 +1,14 @@
+@import '/src/mixin.scss';
+
+.myReservationList {
+  display: flex;
+  flex-direction: column;
+  @include px-vw(gap, 5);
+  .myReservationItem {
+    @include px-vw(padding, 18);
+    background-color: #fff;
+    .myReservationTitleBox {
+      @include px-vw(margin-bottom, 16);
+    }
+  }
+}

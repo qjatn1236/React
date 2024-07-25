@@ -1,0 +1,30 @@
+@import '/src/mixin.scss';
+
+.roomInfoBox {
+  display: flex; 
+  align-items: center; 
+  @include px-vw(gap, 20); 
+  div {
+    position: relative;
+    display: flex; 
+    @include px-vw(font-size, 14); 
+    @include px-vw(line-height, 17); 
+    > * {
+      color: #999999;
+    }
+    p {
+      @include px-vw(margin-left, 4); 
+    }
+    &:first-child:after {
+      content: "";
+      position: absolute;
+      @include px-vw(top, 4); 
+      right: 0;
+      @include px-vw(width, 1); 
+      @include px-vw(height, 9); 
+      @include px-vw(margin-right, -10); 
+      background-color: #eeeeee;
+    }
+  }
+
+}

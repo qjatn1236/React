@@ -1,0 +1,26 @@
+@import '/src/mixin.scss';
+
+.homeRoomListWrap {
+  .homeRoomListItem {
+      display: block;
+      @include px-vw(margin-bottom, 5);
+      &:last-child {
+        @include px-vw(margin-bottom, 0);
+      }
+      .roomImgBox {
+        width: 100%;
+        @include px-vw(height, 113);
+        img {
+          width: 100%;
+          height: 100%;
+          object-position: center;
+          object-fit: cover;
+        }
+      }
+      .line {
+        @include px-vw(width, 354);
+        @include px-vw(height, 1);
+        margin: 0 auto;
+      }
+    }
+  }

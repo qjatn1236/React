@@ -1,0 +1,15 @@
+@import '/src/mixin.scss';
+
+.scroll {
+  display: flex;
+  @include px-vw(width, 372); 
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  .timeLineWrap{
+    display: inline-flex;
+    width: auto;
+    @include px-vw(padding-left, 6); 
+    @include px-vw(padding-right, 18); 
+  }
+}

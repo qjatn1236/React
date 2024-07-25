@@ -1,0 +1,13 @@
+@import '/src/mixin.scss';
+
+.reservationTemplate {
+  min-height: 100vh;
+  @include px-vw(padding-top, 44);
+  background: #EEF4F6;
+  .roomTitleWrap, .timeSelectWrap, .reservationInfoBox ,.peopleWrap{
+    @include px-vw(margin-bottom, 5);
+  }
+  .roomTitleWrap {
+    @include px-vw(margin-top, 5);
+  }
+}

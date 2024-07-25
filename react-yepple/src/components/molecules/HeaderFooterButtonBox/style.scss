@@ -1,0 +1,39 @@
+@import '/src/mixin.scss';
+
+
+.headerFooterButtonBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include px-vw(gap, 37);
+  width: 100%;
+  @include px-vw(padding-top, 18);
+  @include px-vw(padding-bottom, 29);
+  background: #23C3E6;
+  a {
+    position: relative;
+    color: #fff;
+    @include px-vw(font-size, 18);
+  }
+  .line {
+    @include px-vw(width, 1);
+    @include px-vw(height, 10);
+    @include px-vw(margin-left, 1);
+    background-color: #fff;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    @include px-vw(top, -20);
+    left: 0;
+    width: 100%;
+    @include px-vw(height, 20);
+    background-image: url('/src/assets/images/img_pattern_01.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+ 

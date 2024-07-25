@@ -1,0 +1,14 @@
+@import '/src/mixin.scss';
+
+.roomTimeLineWrap {
+  position: relative;
+  @include px-vw(padding, 18); 
+  padding-right: 0;
+  background-color: #ffffff;
+  > p {
+    @include px-vw(font-size, 14); 
+    @include px-vw(line-height, 17); 
+    @include px-vw(margin-bottom, 13); 
+    color: #999999;
+  }
+}

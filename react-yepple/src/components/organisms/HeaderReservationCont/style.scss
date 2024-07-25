@@ -1,0 +1,23 @@
+@import '/src/mixin.scss';
+
+.headerReservationWrap {
+  width: 100%;
+  .titleArea {
+    @include px-vw(padding-left, 18);
+    @include px-vw(padding-right, 18);
+    @include px-vw(margin-bottom, 15);
+    p {
+      width: 100%;
+      @include px-vw(font-size, 16);
+      color: #23C3E6;
+      @include px-vw(padding-bottom, 15);
+    }
+    .line {
+      width: 100%;
+      @include px-vw(height, 1);
+      opacity: 0.2;
+      background: #23C3E6;
+    }
+  }
+ 
+}

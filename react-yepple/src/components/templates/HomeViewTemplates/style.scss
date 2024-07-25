@@ -1,0 +1,13 @@
+@import '/src/mixin.scss';
+
+.homeViewTemplate {
+  min-height: 100vh;
+  @include px-vw(padding-top, 44);
+  background-color: #EEF4F6;
+  .roomViewTitleWrap, .detailInfoBox, .dateSelectWrap {
+    @include px-vw(margin-bottom, 5);
+  }
+  .roomViewTimeLineWrap {
+    margin-bottom: 0;
+  }
+}

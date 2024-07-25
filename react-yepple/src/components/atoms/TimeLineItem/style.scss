@@ -1,0 +1,11 @@
+@import '/src/mixin.scss';
+
+.timeline { 
+  @include px-vw(width, 18); 
+  @include px-vw(height, 5); 
+  background-color: #D9D9D9; 
+  border: none; 
+  &.active {
+    background-color: #23C3E6;
+  }
+}

@@ -1,0 +1,18 @@
+@import '/src/mixin.scss';
+
+.dateSelectWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include px-vw(padding-top, 15);
+  @include px-vw(padding-bottom, 15);
+  @include px-vw(padding-left, 18);
+  @include px-vw(padding-right, 18);
+  background-color: #ffffff;
+  > button {
+    img {
+      @include px-vw(width, 24);
+      @include px-vw(height, 24);
+    }
+  }
+}

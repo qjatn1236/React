@@ -1,0 +1,17 @@
+@import '/src/mixin.scss';
+
+.peopleBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include px-vw(gap, 5);
+  span {
+    @include px-vw(padding-top, 5);
+    @include px-vw(padding-bottom, 5);
+    @include px-vw(padding-left, 10);
+    @include px-vw(padding-right, 10);
+    @include px-vw(border-radius, 20);
+    background: #EAF8FB;
+    @include px-vw(font-size, 12);
+  }
+}

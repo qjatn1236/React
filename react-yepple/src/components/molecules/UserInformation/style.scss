@@ -1,0 +1,12 @@
+@import "/src/mixin.scss";
+
+.calendarBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include px-vw(gap, 32);
+  @include px-vw(padding, 10);
+  .date {
+    @include px-vw(font-size, 16);
+  }
+}

@@ -1,0 +1,22 @@
+@import '/src/mixin.scss';
+
+.alertButtonBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @include px-vw(gap, 10);
+  button {
+    display: block;
+    @include px-vw(width, 86);
+    @include px-vw(height, 39);
+    @include px-vw(border-radius, 22);
+    @include px-vw(font-size, 16);
+    color: #fff;
+    &:first-child {
+      background: #CCC;
+    }
+    &:last-child {
+      background: #23C3E6;
+    }
+  }
+}

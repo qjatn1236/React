@@ -1,0 +1,13 @@
+@import '/src/mixin.scss';
+
+.copy {
+  background-color: #EEF4F6;
+  p {
+    text-align: center;
+    @include px-vw(font-size, 12);
+    @include px-vw(line-height, 14.4);
+    @include px-vw(padding-top, 62);
+    @include px-vw(padding-bottom, 18);
+    color: #23C3E6;
+  }
+}

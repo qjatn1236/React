@@ -1,0 +1,8 @@
+@import '/src/mixin.scss';
+
+.myPageTemplate {
+  @include px-vw(padding-top, 44);
+  min-height: 100vh;
+  background: #EEF4F6;
+}
+

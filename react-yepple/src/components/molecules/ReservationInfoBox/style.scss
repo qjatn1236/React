@@ -1,0 +1,23 @@
+@import '/src/mixin.scss';
+
+.reservationInfoBox {
+  @include px-vw(padding, 18);
+  background-color: #ffffff;
+  label {
+    display: block;
+    @include px-vw(margin-bottom, 8);
+    @include px-vw(font-size, 16);
+    color: #666666;
+  }
+  input {
+    width: 100%;
+    @include px-vw(padding-top, 14);
+    @include px-vw(padding-bottom, 14);
+    @include px-vw(font-size, 16);
+    color: #23C3E6;
+    &::placeholder {
+      @include px-vw(font-size, 14);
+      color: #cccccc;
+    }
+  }
+}

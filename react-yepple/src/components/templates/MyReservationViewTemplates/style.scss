@@ -1,0 +1,38 @@
+@import '/src/mixin.scss';
+
+.myReservationViewTemplate {
+  @include px-vw(padding-top, 44);
+  min-height: 100vh;
+  background: #EEF4F6;
+  .roomViewTitleWrap, .reservationInfoBox, .peopleWrap {
+    @include px-vw(margin-bottom, 5);
+  }
+  .dateSelectWrap {
+    position: relative;
+    @include px-vw(padding, 18);
+    button {
+      display: none;
+    }
+    & + .dateSelectWrap{
+      @include px-vw(margin-bottom, 5);
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        @include px-vw(left, 18);
+        @include px-vw(width, 354);
+        @include px-vw(height, 1);
+        background: #eee;
+      }
+    }
+  }
+  
+  .peopleWrap {
+    .labelIconBox {
+      button {
+        display: none;
+      }
+    }
+  }
+}
+

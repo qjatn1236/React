@@ -1,0 +1,50 @@
+.userLink {
+  color: #23c3e6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.49px;
+}
+
+.userAccountBox {
+  text-align: center;
+  .userAccount {
+    margin: 16px 0 18px;
+    padding: 33px 0;
+    border: 1px dashed #23c3e6;
+    border-radius: 15px;
+    p:first-child {
+      margin-bottom: 11px;
+      color: #23c3e6;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.7px;
+    }
+    p:last-child {
+      color: #ccc;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.49px;
+    }
+  }
+  a {
+    color: #23c3e6;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.49px;
+  }
+}
+
+.completeText {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  span {
+    color: #23c3e6;
+  }
+}

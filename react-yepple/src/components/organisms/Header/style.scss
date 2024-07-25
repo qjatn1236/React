@@ -1,0 +1,45 @@
+@import '/src/mixin.scss';
+
+.headerWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
+  .defaultArea {
+    display: flex;
+    justify-content: space-between;
+    @include px-vw(padding-top, 6);
+    @include px-vw(padding-bottom, 6);
+    @include px-vw(padding-left, 12);
+    @include px-vw(padding-right, 12);
+    img {
+      @include px-vw(width, 32);
+      @include px-vw(height, 32);
+    }
+    a {
+      .logo {
+        @include px-vw(width, 71);
+        @include px-vw(height, 27);
+        @include px-vw(margin-left, 12);
+      }
+      .home {
+        @include px-vw(width, 32);
+        @include px-vw(height, 32);
+      }
+    }
+  }
+  .openArea {
+    position: relative;
+    background-color: #fff;
+    min-height: calc(100vh - (44/390 * 100vw));
+    .menuListBox {
+      @include px-vw(padding-top, 30);
+    }
+    .headerReservationWrap {
+      @include px-vw(margin-top, 97);
+      @include px-vw(margin-bottom, 59);
+    }
+  }
+}

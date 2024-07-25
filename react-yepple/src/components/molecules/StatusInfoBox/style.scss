@@ -1,0 +1,45 @@
+@import '/src/mixin.scss';
+
+.statusInfoBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  @include px-vw(gap, 14);
+  @include px-vw(width, 311);
+  @include px-vw(border-radius, 15);
+  @include px-vw(padding-top, 9);
+  @include px-vw(padding-bottom, 9);
+  @include px-vw(padding-left, 20);
+  @include px-vw(padding-right, 20);
+  border: 1px solid #CCC;
+  background-color: #ffffff;
+  .leftArea {
+    @include px-vw(width, 235);
+    text-overflow: ellipsis;
+    > p {
+      @include px-vw(font-size, 14);
+      font-weight: 600;
+      color: #23C3E6;
+    }
+    .name {
+      display: flex;
+      @include px-vw(margin-top, 6);
+      @include px-vw(font-size, 14);
+      color: #999;
+    }
+  }
+  .rightArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include px-vw(gap, 3);
+    img {
+      @include px-vw(width, 12);
+      @include px-vw(height, 12);
+    }
+    p {
+      color: #cccccc;
+      @include px-vw(font-size, 10);
+    }
+  }
+}

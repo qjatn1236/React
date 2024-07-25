@@ -1,0 +1,13 @@
+@import '/src/mixin.scss';
+
+.roomViewTimeLineWrap {
+  @include px-vw(padding-top, 15);
+  @include px-vw(padding-bottom, 15);
+  @include px-vw(padding-left, 18);
+  @include px-vw(padding-right, 0);
+  background-color: #ffffff;
+  .labelIconBox {
+    @include px-vw(margin-bottom, 19);
+    @include px-vw(padding-right, 18);
+  }
+}

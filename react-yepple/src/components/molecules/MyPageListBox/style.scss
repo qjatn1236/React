@@ -1,0 +1,15 @@
+@import '/src/mixin.scss';
+
+.myPageListBox {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  a {
+    @include px-vw(padding-top, 15.5);
+    @include px-vw(padding-bottom, 15.5);
+    @include px-vw(padding-left, 18);
+    @include px-vw(padding-right, 18);
+    @include px-vw(font-size, 16);
+    color: #666;
+  }
+}

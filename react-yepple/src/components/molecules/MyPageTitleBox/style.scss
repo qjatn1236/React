@@ -1,0 +1,21 @@
+@import '/src/mixin.scss';
+
+.myPageTitleBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include px-vw(gap, 16);
+  @include px-vw(padding-top, 30);
+  @include px-vw(padding-bottom, 30);
+  @include px-vw(padding-left, 25);
+  @include px-vw(padding-right, 25);
+  background-color: #23C3E6;
+  img {
+    @include px-vw(width, 42);
+    @include px-vw(width, 42);
+  }
+  p {
+    @include px-vw(font-size, 16);
+    color: #fff;
+  }
+}

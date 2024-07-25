@@ -1,0 +1,7 @@
+@import '/src/mixin.scss';
+
+.calendarViewTemplate {
+  background-color: #EEF4F6;
+  min-height: 100vh;
+  @include px-vw(padding-top, 49);
+}

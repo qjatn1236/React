@@ -1,0 +1,47 @@
+[
+  {
+    "date": "2024-03-03",
+    "schedule": [
+      {
+        "title": "회의실 A",
+        "time": "10:00",
+        "type": "roomBox roomA",
+        "id": 1
+      },
+      {
+        "title": "회의실 C",
+        "time": "10:00",
+        "type": "roomBox roomC",
+        "id": 2
+      },
+      {
+        "title": "회의실 B",
+        "time": "17:00",
+        "type": "roomBox roomB",
+        "id": 3
+      }
+    ]
+  },
+  {
+    "date": "2024-03-09",
+    "schedule": [
+      {
+        "title": "회의실 A",
+        "time": "14:00",
+        "type": "roomBox roomA",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "date": "2024-03-16",
+    "schedule": [
+      {
+        "title": "회의실 A",
+        "time": "11:00",
+        "type": "roomBox roomA",
+        "id": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+@import '/src/mixin.scss';
+
+.myReservationTemplate {
+  min-height: 100vh;
+  @include px-vw(padding-top, 49);
+  background-color: #EEF4F6;
+}

@@ -1,0 +1,28 @@
+@import '/src/mixin.scss';
+
+.menuListBox {
+  > a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include px-vw(gap, 8);
+    @include px-vw(padding-top, 9);
+    @include px-vw(padding-bottom, 9);
+    @include px-vw(padding-left, 12);
+    @include px-vw(padding-right, 12);
+    img {
+      @include px-vw(width, 32);
+      @include px-vw(height, 32);
+    }
+    p {
+      color: #666;
+      @include px-vw(font-size, 16);
+    }
+  }
+}
+.copyright {
+  color: #CCC;
+  @include px-vw(font-size, 12);
+  @include px-vw(margin-top, 18);
+  @include px-vw(margin-left, 19);
+}

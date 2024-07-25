@@ -1,0 +1,22 @@
+@import '/src/mixin.scss';
+
+.footerButtonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include px-vw(padding-top, 40);
+  @include px-vw(padding-bottom, 54);
+  text-align: center;
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include px-vw(width, 264);
+    @include px-vw(height, 58);
+    @include px-vw(border-radius, 27);
+    background-color: #23C3E6;
+    color: #ffffff;
+    @include px-vw(font-size, 16);
+    @include px-vw(line-height, 19);
+  }
+}

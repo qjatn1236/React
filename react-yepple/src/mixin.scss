@@ -1,0 +1,6 @@
+
+/* px->vw 변환비율구하기  */
+@mixin px-vw($prop, $val, $base:390){
+  #{$prop}: calc(#{$val} / #{$base} * 100vw);
+}
+  

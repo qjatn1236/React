@@ -1,0 +1,20 @@
+@import '/src/mixin.scss';
+
+.calendarDateBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @include px-vw(gap, 32); 
+  @include px-vw(padding, 10); 
+  background: #fff;
+  .date {
+    @include px-vw(font-size, 16); 
+  }
+  button {
+    img {
+      @include px-vw(width, 24); 
+      @include px-vw(height, 24); 
+    }
+  }
+}

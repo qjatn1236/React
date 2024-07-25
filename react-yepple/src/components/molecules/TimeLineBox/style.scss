@@ -1,0 +1,17 @@
+@import '/src/mixin.scss';
+
+.timeLineBox {
+  position: relative;
+  display: inline-flex;
+  @include px-vw(height, 25); 
+  @include px-vw(margin-right, 1); 
+  .text {
+    position: absolute;
+    @include px-vw(top, 11); 
+    @include px-vw(margin-left, -5.5); 
+    @include px-vw(width, 15); 
+    @include px-vw(font-size, 12); 
+    @include px-vw(line-height, 14);
+    color: #CCCCCC;
+  }
+}

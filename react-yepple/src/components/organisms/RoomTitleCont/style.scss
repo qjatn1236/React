@@ -1,0 +1,9 @@
+@import '/src/mixin.scss';
+
+.roomTitleWrap {
+  @include px-vw(padding, 18);
+  background-color: #ffffff;
+  .roomTitleBox {
+    @include px-vw(margin-bottom, 12);
+  }
+}

@@ -1,0 +1,19 @@
+@import '/src/mixin.scss';
+
+.statusInfoWrap {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  @include px-vw(gap, 10);
+  width: 100%;
+  background-color: #EEF4F6;
+  @include px-vw(padding-top, 42);
+  @include px-vw(padding-bottom, 155);
+  @include px-vw(padding-left, 9);
+  @include px-vw(padding-right, 14);
+  .listArea {
+    position: absolute;
+    @include px-vw(top, 42);
+    @include px-vw(left, 47);
+  }
+}

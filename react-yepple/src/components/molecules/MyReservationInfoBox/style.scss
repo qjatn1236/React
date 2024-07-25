@@ -1,0 +1,33 @@
+@import '/src/mixin.scss';
+
+.myReservationInfoBox {
+  .title {
+    @include px-vw(font-size, 14);
+    color: #666;
+  }
+  > div {
+    display: flex;
+    @include px-vw(gap, 20); 
+    @include px-vw(margin-top, 8);
+    p {
+      @include px-vw(font-size, 14);
+    }
+    .date {
+      position: relative;
+      color: #999;
+      &::after {
+        content: "";
+        position: absolute;
+        @include px-vw(top, 4); 
+        right: 0;
+        @include px-vw(width, 1); 
+        @include px-vw(height, 9); 
+        @include px-vw(margin-right, -10); 
+        background-color: #eeeeee;
+      }
+    }
+    .time {
+      color: #23C3E6
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '/src/mixin.scss';
+
+.dateSelectBox {
+  display: flex;
+  align-items: center;
+  @include px-vw(gap, 14);
+  > label, p {
+    @include px-vw(font-size, 16);
+    @include px-vw(line-height, 19);
+  }
+  label {
+    color:  #666666;
+  }
+  p {
+    color:  #23C3E6;
+  }
+}

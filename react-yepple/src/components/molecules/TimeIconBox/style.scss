@@ -1,0 +1,33 @@
+@import '/src/mixin.scss';
+
+
+.timeIconBox {
+  display: flex;
+  justify-content: flex-end;
+  @include px-vw(gap, 15); 
+  @include px-vw(padding, 18);
+  div {
+    display: inline-flex;
+    align-items: center;
+    @include px-vw(gap, 6); 
+    .box {
+      display: block;
+      @include px-vw(width, 15); 
+      @include px-vw(height, 15); 
+      background: #EEEEEE;
+      background-size: 100% 100%;
+      &.active {
+        background: #23C3E6;
+      }
+      &.none {
+        pointer-events: none;
+        background-image: url('/src/assets/images/time_select_reservation.svg');
+      }
+    }
+    p {
+      @include px-vw(font-size, 14); 
+      color: #666666;
+    }
+  }
+}
+

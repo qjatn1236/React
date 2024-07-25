@@ -1,0 +1,14 @@
+@import '/src/mixin.scss';
+
+.myReservationEditTemplate {
+  min-height: 100vh;
+  background: #EEF4F6;
+  .roomViewTitleWrap, .timeSelectWrap, .reservationInfoBox, .peopleWrap {
+    @include px-vw(margin-bottom, 5);
+  }
+  .timeIconBox {
+    div:first-child {
+      display: none;
+    }
+  }
+}

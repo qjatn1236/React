@@ -1,0 +1,6 @@
+@import '/src/mixin.scss';
+
+.homeTemplate {
+  @include px-vw(padding-top, 44);
+  background-color: #EEF4F6;
+}

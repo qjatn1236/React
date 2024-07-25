@@ -1,0 +1,18 @@
+@import '/src/mixin.scss';
+
+.labelIconBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  label {
+    @include px-vw(font-size, 16);
+    @include px-vw(line-height, 19);
+    color: #666666;
+  }
+  > button {
+    img {
+      @include px-vw(width, 24);
+      @include px-vw(height, 24);
+    }
+  }
+}

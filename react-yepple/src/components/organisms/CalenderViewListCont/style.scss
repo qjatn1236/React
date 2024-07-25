@@ -1,0 +1,42 @@
+@import '/src/mixin.scss';
+
+.calenderViewList {
+  display: flex;
+  flex-direction: column;
+  @include px-vw(gap, 5);
+}
+.calenderViewItem {
+  @include px-vw(padding-top, 15);
+  @include px-vw(padding-bottom, 18);
+  background: #fff;
+  .topArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include px-vw(gap, 10);
+    @include px-vw(padding-left, 18);
+    @include px-vw(padding-right, 18);
+    @include px-vw(margin-bottom, 17);
+    .roomTitleBox {
+      @include px-vw(width, 303);
+      p {
+        @include px-vw(font-size, 14);
+        color: #666;
+      }
+    }
+    > button {
+      @include px-vw(padding-top, 5);
+      @include px-vw(padding-bottom, 5);
+      @include px-vw(padding-left, 10);
+      @include px-vw(padding-right, 10);
+      @include px-vw(border-radius, 4);
+      border: 1px solid #23C3E6;
+      @include px-vw(font-size, 12);
+      color: #23C3E6;
+    }
+  }
+  .scroll {
+    @include px-vw(margin-left, 18);
+  }
+}

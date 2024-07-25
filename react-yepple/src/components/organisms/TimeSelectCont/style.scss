@@ -1,0 +1,22 @@
+@import '/src/mixin.scss';
+
+.timeSelectWrap {
+  background-color: #ffffff;
+  .dateSelectBox {
+    position: relative;
+    @include px-vw(padding-top, 15);
+    @include px-vw(padding-bottom, 15);
+    @include px-vw(padding-left, 18);
+    @include px-vw(padding-right, 18);
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      @include px-vw(left, 18);
+      @include px-vw(width, 354);
+      height: 1px;
+      background-color: #EEEEEE;
+    }
+  }
+}

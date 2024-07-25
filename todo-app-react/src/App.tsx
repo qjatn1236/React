@@ -8,11 +8,7 @@ interface Todo {
 }
 
 function App() {
-  const [todos, setTodos] = useState<Todo[]>(
-    JSON.parse(localStorage.getItem("todo-react") || "[]")
-    // { id: 1, title: "첫 번째 할일", completed: false },
-    // { id: 2, title: "두 번째 할일", completed: true },
-  );
+  const [todos, setTodos] = useState<Todo[]>(JSON.parse(localStorage.getItem("todo-react") || "[]"));
 
   const [editingTodo, setEditingTodo] = useState<Todo | null>();
   const [editingTodoTitle, setEditingTodoTitle] = useState<string>("");
@@ -35,8 +31,6 @@ function App() {
 
     // 불변성을 지켜서 업데이트 해야함
   };
-
-  // 2. 할 일 목록 표시
 
   // 3. 할 일 완료 표시
   const 할일완료토글 = (target: Todo) => {

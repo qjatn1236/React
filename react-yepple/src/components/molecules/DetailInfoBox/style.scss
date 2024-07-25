@@ -1,0 +1,17 @@
+@import '/src/mixin.scss';
+
+.detailInfoBox {
+  @include px-vw(padding, 18);
+  background-color: #ffffff;
+  label {
+    @include px-vw(font-size, 16);
+    @include px-vw(line-height, 19);
+    color: #666666;
+  }
+  .infoText{
+    @include px-vw(margin-top, 14);
+    @include px-vw(font-size, 14);
+    @include px-vw(line-height, 23);
+    color: #999999;
+  }
+}
