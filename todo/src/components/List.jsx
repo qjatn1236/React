@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./List.css";
+import { useState } from "react";
 import TodoItem from "./TodoItem";
 
 export default function List({ todos, onUpdate, onDelete }) {
