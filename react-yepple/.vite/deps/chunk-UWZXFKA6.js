@@ -15669,7 +15669,7 @@ var require_react_dom_development = __commonJS({
           var newProps = workInProgress2.pendingProps;
           var render2 = newProps.children;
           {
-            if (typeof render2 !== "function") {
+            if (typeof  !== "function") {
               error("A context consumer was rendered with multiple children, or a child that isn't a function. A context consumer expects a single child that is a function. If you did pass a function, make sure there is no trailing or leading whitespace around it.");
             }
           }
